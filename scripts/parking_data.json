@@ -1,0 +1,482 @@
+[
+  {
+    "id": "1",
+    "price": "1.1",
+    "location": "VP Jardín de Recoletos · Calle de Gil de Santivañes, 6, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.4223075,
+    "longitude": -3.689168100000001
+  },
+  {
+    "id": "2",
+    "price": "1.1",
+    "location": "Parking IH Galaxia Moncloa · Calle de Isaac Peral, 4, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.4349584,
+    "longitude": -3.7180491
+  },
+  {
+    "id": "3",
+    "price": "1.1",
+    "location": "Petit Palace Plaza Mayor · Calle Mayor, 46, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.4160074,
+    "longitude": -3.7090951
+  },
+  {
+    "id": "4",
+    "price": "1.1",
+    "location": "Saba Plaza Mostenses Car Park · Plaza de los Mostenses, s/n, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.4228,
+    "longitude": -3.7088
+  },
+  {
+    "id": "5",
+    "price": "1.1",
+    "location": "[P] Garaje Ingemotion · Calle de Valencia, 19, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.4066047,
+    "longitude": -3.6996791
+  },
+  {
+    "id": "6",
+    "price": "1.1",
+    "location": "[P] Parking Lavapiés - Amparo · Calle del Amparo, 75, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.4079355,
+    "longitude": -3.7015278
+  },
+  {
+    "id": "7",
+    "price": "1.1",
+    "location": "Parking Las Cortes · Plaza de las Cortes, s/n, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.4156422,
+    "longitude": -3.6952471
+  },
+  {
+    "id": "8",
+    "price": "1.1",
+    "location": "Garaje Fermar · Calle de la Escalinata, 1, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.4167994,
+    "longitude": -3.7093739
+  },
+  {
+    "id": "9",
+    "price": "1.1",
+    "location": "Aparcamiento EMT Plaza España · Plaza de España, s/n, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.4227176,
+    "longitude": -3.7121649
+  },
+  {
+    "id": "10",
+    "price": "1.1",
+    "location": "Cafeteria and public parking in Atocha Ruiz Group · Ronda de Atocha, 12, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.4068864,
+    "longitude": -3.696397499999999
+  },
+  {
+    "id": "11",
+    "price": "1.1",
+    "location": "Parking Martínez Campos 42 · Paseo del General Martínez Campos, 42 Duplicado, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.43459199999999,
+    "longitude": -3.692142
+  },
+  {
+    "id": "12",
+    "price": "1.1",
+    "location": "Aparcamiento [P] Serrano Retiro · Calle Alcalá, 73, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.4204541,
+    "longitude": -3.6874531
+  },
+  {
+    "id": "13",
+    "price": "1.1",
+    "location": "Parking PARKIA by Indigo - La Guindalera. Plaza San Cayetano. Plaza Toros Ventas. Madrid · Plaza de San Cayetano, Salamanca",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.4341554,
+    "longitude": -3.6704035
+  },
+  {
+    "id": "14",
+    "price": "1.1",
+    "location": "Garaje REIM · Calle de San Bernardino, 4, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.4248978,
+    "longitude": -3.7097049
+  },
+  {
+    "id": "15",
+    "price": "1.1",
+    "location": "[P] Parking Clara del Rey · Calle de Clara del Rey, 32, 34, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.4433569,
+    "longitude": -3.668608900000001
+  },
+  {
+    "id": "16",
+    "price": "1.1",
+    "location": "Aparcamientos Riscal · Calle del Monte Esquinza, 34, 7A, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.42999289999999,
+    "longitude": -3.691784400000001
+  },
+  {
+    "id": "17",
+    "price": "1.1",
+    "location": "Parking La Latina · Calle de Toledo, 88, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.4086687,
+    "longitude": -3.710942999999999
+  },
+  {
+    "id": "18",
+    "price": "1.1",
+    "location": "Parking Plaza Reyes Magos · Plaza de los Reyes Magos, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.4087161,
+    "longitude": -3.6761603
+  },
+  {
+    "id": "19",
+    "price": "1.1",
+    "location": "Indigo - Quevedo · 6D, Calle de Rodríguez San Pedro, 8, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.4316879,
+    "longitude": -3.7063368
+  },
+  {
+    "id": "20",
+    "price": "1.1",
+    "location": "Parking Garca Reina Cristina Garaje- Menéndez Pelayo · Paseo de la Reina Cristina, 24, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.4069807,
+    "longitude": -3.6811374
+  },
+  {
+    "id": "21",
+    "price": "1.1",
+    "location": "Parking Garage Espronceda · Calle de Espronceda, 12, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.4405299,
+    "longitude": -3.6983671
+  },
+  {
+    "id": "22",
+    "price": "1.1",
+    "location": "Empark Hospital La Conception · Avenida de los Reyes Católicos, 2, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.43818269999999,
+    "longitude": -3.719611
+  },
+  {
+    "id": "23",
+    "price": "1.1",
+    "location": "Parking Bernabéu Silos 6 · Calle de Santo Domingo de Silos, 6, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.4512378,
+    "longitude": -3.687419600000001
+  },
+  {
+    "id": "24",
+    "price": "1.1",
+    "location": "Parking Carga electrica O'Donnell 53 · Novotel Madrid Center, Calle de O'Donnell, 53, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.42206619999999,
+    "longitude": -3.6719799
+  },
+  {
+    "id": "25",
+    "price": "1.1",
+    "location": "Garaje [P] Denia · Calle de Alcántara, 35, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.42946239999999,
+    "longitude": -3.6739062
+  },
+  {
+    "id": "26",
+    "price": "1.1",
+    "location": "[P] Parking Cascorro · Calle de Fray Ceferino González, 6, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.408917,
+    "longitude": -3.706104399999999
+  },
+  {
+    "id": "27",
+    "price": "1.1",
+    "location": "Parking Condes del Val · Calle de los Condes del Val, 1, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.45384389999999,
+    "longitude": -3.6842203
+  },
+  {
+    "id": "28",
+    "price": "1.1",
+    "location": "Garaje Luna · Calle de Pizarro, 7, Centro, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.4229683,
+    "longitude": -3.706106100000001
+  },
+  {
+    "id": "29",
+    "price": "1.1",
+    "location": "Parking Cuzco cerca Bernabéu · Paseo de la Castellana, 125, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.4582746,
+    "longitude": -3.6912165
+  },
+  {
+    "id": "30",
+    "price": "1.1",
+    "location": "Garaje [P] Durillo · Calle de Castelló, 91, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.4331413,
+    "longitude": -3.681002
+  },
+  {
+    "id": "31",
+    "price": "1.0",
+    "location": "Parking Marcenado-Conde Duque · Calle de Santa Cruz de Marcenado, 14, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.4288684,
+    "longitude": -3.708966100000001
+  },
+  {
+    "id": "32",
+    "price": "1.7",
+    "location": "Canon Business Center Madrid Plaza de España operado por Canon M6 · Paseo del Rey, 16, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.42185599999999,
+    "longitude": -3.7185254
+  },
+  {
+    "id": "33",
+    "price": "1.8",
+    "location": "Aparcamiento Dr. Fleming 21 · Calle del Doctor Fleming, 21, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.459686,
+    "longitude": -3.688143000000001
+  },
+  {
+    "id": "34",
+    "price": "1.9",
+    "location": "Parking Plaza Del Carmen · C. de la Salud, Plaza del Carmen, 2, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.4184504,
+    "longitude": -3.704069499999999
+  },
+  {
+    "id": "35",
+    "price": "2.0",
+    "location": "Parking Mayor · Calle de Zaragoza, 9, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.415352,
+    "longitude": -3.7063789
+  },
+  {
+    "id": "36",
+    "price": "2.1",
+    "location": "Parking Centro Madrid · Calle de los Jardines, 16, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.41889210000001,
+    "longitude": -3.700982799999999
+  },
+  {
+    "id": "37",
+    "price": "2.1",
+    "location": "Parking Plaza de Santa Ana · Calle del Príncipe, s/n, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.4145205,
+    "longitude": -3.7007895
+  },
+  {
+    "id": "38",
+    "price": "2.1",
+    "location": "Aparcamientos Gavirental · Calle del Doctor Cortezo, 10, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.4130309,
+    "longitude": -3.7039463
+  },
+  {
+    "id": "39",
+    "price": "2.1",
+    "location": "Garaje Centro · Calle de los Relatores, 11, BAJO, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.4130023,
+    "longitude": -3.703184400000001
+  },
+  {
+    "id": "40",
+    "price": "2.1",
+    "location": "Garaje Pizarro · Calle de Pizarro, 16, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.4232295,
+    "longitude": -3.7057186
+  },
+  {
+    "id": "41",
+    "price": "2.1",
+    "location": "PARKING PUERTA DEL SOL LOW COST · Calle de la Esperanza, 4, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.4100651,
+    "longitude": -3.7005546
+  },
+  {
+    "id": "42",
+    "price": "2.1",
+    "location": "MotoParking · Plaza de la Cebada, s/n, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.41124440000001,
+    "longitude": -3.7098179
+  },
+  {
+    "id": "43",
+    "price": "2.1",
+    "location": "PARKING BARATO MADRID · Calle de la Primavera, 2, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.4099532,
+    "longitude": -3.7004333
+  },
+  {
+    "id": "44",
+    "price": "2.1",
+    "location": "Piamonte · Calle de Piamonte, 16, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.4230161,
+    "longitude": -3.694664699999999
+  },
+  {
+    "id": "45",
+    "price": "2.1",
+    "location": "Parking Cuesta de San Vicente · Cuesta de San Vicente, 14, 16, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.42108899999999,
+    "longitude": -3.714785
+  },
+  {
+    "id": "46",
+    "price": "2.1",
+    "location": "Aparcamiento Interparking Barceló - Parking 24 Horas zona bajas emisiones Madrid · Calle de Barceló, S/N, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.4263641,
+    "longitude": -3.700328899999999
+  },
+  {
+    "id": "47",
+    "price": "2.1",
+    "location": "ParkingLibre Paseo del Prado 48 · Paseo del Prado, 48, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.4098357,
+    "longitude": -3.692745799999999
+  },
+  {
+    "id": "48",
+    "price": "2.1",
+    "location": "Parking VOT Madrid Central - Promoparc · Calle de la Ventosa, 26, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.4086446,
+    "longitude": -3.7147786
+  },
+  {
+    "id": "49",
+    "price": "3.0",
+    "location": "Parking CLUBÖ Villanueva - Plaza Colón Madrid. ¡Höla! · Calle de Villanueva, 2, A, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.4229265,
+    "longitude": -3.6905161
+  },
+  {
+    "id": "50",
+    "price": "3.0",
+    "location": "Aparcamiento Circo Price · Calle de Sebastián Elcano, 25, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.4050879,
+    "longitude": -3.697794
+  },
+  {
+    "id": "51",
+    "price": "3.1",
+    "location": "Parking Plaza de Colón telpark by Empark · Plaza de Colón, s/n, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.424495,
+    "longitude": -3.6898564
+  },
+  {
+    "id": "52",
+    "price": "3.2",
+    "location": "Parking Indigo - Madrid Principe Pio · Paseo de la Florida, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.4222554,
+    "longitude": -3.721097399999999
+  },
+  {
+    "id": "53",
+    "price": "3.2",
+    "location": "Parking plaza mayor Madrid Lowcostparkingmadrid · Calle del Labrador, 4, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.402511,
+    "longitude": -3.7010849
+  },
+  {
+    "id": "54",
+    "price": "3.2",
+    "location": "Bike Parking Madrid · Calle del Labrador, 4, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.40240699999999,
+    "longitude": -3.701087
+  },
+  {
+    "id": "55",
+    "price": "3.2",
+    "location": "[P] Garaje Atocha / Rafael Riego (bajo coste) · Calle de Rafael de Riego, 5, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.4047498,
+    "longitude": -3.6918639
+  },
+  {
+    "id": "56",
+    "price": "3.2",
+    "location": "Interparking Velázquez - Jorge Juan · Calle Velázquez, 14, 16, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.42296169999999,
+    "longitude": -3.6840999
+  },
+  {
+    "id": "57",
+    "price": "3.2",
+    "location": "Saba Madrid-Car Park P2 · Paseo de la Infanta Isabel, S/n, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.40554179999999,
+    "longitude": -3.6876124
+  },
+  {
+    "id": "58",
+    "price": "3.2",
+    "location": "Aparcamiento Núñez de Balboa 12 · Calle de Núñez de Balboa, 12, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.42290629999999,
+    "longitude": -3.6828862
+  },
+  {
+    "id": "59",
+    "price": "3.2",
+    "location": "PARKING IN THE WAREHOUSE snifter · Calle de Núñez de Balboa, 24, local b, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.4242642,
+    "longitude": -3.6827395
+  },
+  {
+    "id": "60",
+    "price": "3.2",
+    "location": "EMT Public Parking lot · Autovía del Suroeste, 66, Madrid",
+    "description": "Sin descripción por el momento",
+    "latitude": 40.415499,
+    "longitude": -3.7273194
+  }
+]

@@ -4,6 +4,10 @@ import { HapticTab } from '@/components/haptic-tab';
 import { IconSymbol } from '@/components/ui/icon-symbol';
 import { Colors } from '@/constants/theme';
 import { useColorScheme } from '@/hooks/use-color-scheme';
+import { MaterialCommunityIcons } from "@expo/vector-icons";
+
+
+
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
@@ -22,6 +26,31 @@ export default function TabLayout() {
           tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
         }}
       />
+      
+      <Tabs.Screen
+        name="parking"
+        options={{
+          title: 'Parking',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="map.fill" color={color} />,
+        }}
+      />
+
+      <Tabs.Screen
+        name="gasStation"
+        options={{
+          title: 'Gas Station',
+          tabBarIcon: ({ color }) => <MaterialCommunityIcons name="gas-station" size={24} color={color} />,
+        }}
+      />
+
+      <Tabs.Screen
+        name="scan"
+        options={{
+          title: 'Scan',
+          tabBarIcon: ({ color }) => <MaterialCommunityIcons name="barcode-scan" size={24} color={color} />,
+        }}
+      />
+
       <Tabs.Screen
         name="settings"
         options={{

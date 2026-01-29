@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "my-mobile-app",
+    "name": "ParKing App",
     "slug": "my-mobile-app",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -23,7 +23,7 @@
     },
     "web": {
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/icon.png"
     },
     "plugins": [
       "expo-router",
