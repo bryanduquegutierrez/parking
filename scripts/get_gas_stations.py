@@ -4,12 +4,10 @@ import time
 
 API_KEY = "AIzaSyB0xJF-5TpvXlZjaeolGfYNfXl33fG9CV0"
 
-
-
-# Ubicación base (ejemplo: Madrid centro)
+# Ubicación base (Madrid centro)
 LAT = 40.4168
 LNG = -3.7038
-RADIUS = 5000  # metros
+RADIUS = 10000  # metros
 
 PLACES_URL = "https://maps.googleapis.com/maps/api/place/nearbysearch/json"
 DETAILS_URL = "https://maps.googleapis.com/maps/api/place/details/json"
@@ -39,7 +37,7 @@ params = {
 
 while True:
     response = requests.get(PLACES_URL, params=params).json()
-    print(response)  # <--- para depurar
+    print(response)
 
     for place in response.get("results", []):
         phone, hours = get_place_details(place["place_id"])

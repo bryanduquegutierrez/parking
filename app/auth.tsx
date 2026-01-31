@@ -27,7 +27,7 @@ export default function AuthScreen() {
       JSON.parse(storedUser);
 
     if (username === savedUser && password === savedPass) {
-      router.replace("/home");
+      router.replace("/parking");
     } else {
       alert("Credenciales incorrectas");
     }

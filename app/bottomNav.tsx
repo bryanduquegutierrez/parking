@@ -7,10 +7,10 @@ export default function BottomNav(): JSX.Element {
 
   return (
     <View style={styles.nav}>
-      <Pressable onPress={() => router.push('/tabs/home')}>
+      <Pressable onPress={() => router.push('../tabs/home')}>
         <Text style={styles.text}>Pantalla 1</Text>
       </Pressable>
-      <Pressable onPress={() => router.push('/tabs/settings')}>
+      <Pressable onPress={() => router.push('../tabs/settings')}>
         <Text style={styles.text}>Pantalla 2</Text>
       </Pressable>
     </View>

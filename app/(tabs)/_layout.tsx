@@ -19,19 +19,12 @@ export default function TabLayout() {
         headerShown: false,
         tabBarButton: HapticTab,
       }}>
-      <Tabs.Screen
-        name="home"
-        options={{
-          title: 'Home',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
-        }}
-      />
       
       <Tabs.Screen
         name="parking"
         options={{
           title: 'Parking',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="map.fill" color={color} />,
+          tabBarIcon: ({ color }) => <MaterialCommunityIcons size={28} name="parking" color={color} />,
         }}
       />
 
@@ -40,6 +33,14 @@ export default function TabLayout() {
         options={{
           title: 'Gas Station',
           tabBarIcon: ({ color }) => <MaterialCommunityIcons name="gas-station" size={24} color={color} />,
+        }}
+      />
+
+      <Tabs.Screen
+        name="streetParking"
+        options={{
+          title: 'Street Parking',
+          tabBarIcon: ({ color }) => <MaterialCommunityIcons name="car" size={24} color={color} />,
         }}
       />
 

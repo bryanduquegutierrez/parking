@@ -1,21 +1,6 @@
 import { Ionicons } from "@expo/vector-icons";
 import * as Location from "expo-location";
 import { useEffect, useState } from "react";
-import adsJson from "../../scripts/parking_data.json";
-
-
-export const PARKING_DATA: parking[] = (adsJson as any[]).map((ad) => ({
-  id: ad.id,
-  price: parseFloat(ad.price), // <-- aquí convertimos a number
-  location: ad.location,
-  description: ad.description,
-  latitude: ad.latitude,
-  longitude: ad.longitude,
-  slots: ad.slots,
-}));
-
-
-
 import {
   Alert,
   FlatList,
@@ -27,6 +12,7 @@ import {
   Text,
   View,
 } from "react-native";
+import { supabase } from "../../services/supabase";
 
 type parking = {
   id: string;
@@ -38,15 +24,48 @@ type parking = {
   slots: number;
 };
 
+
 type FilterType = "price" | "distance";
 
-export default function GasStationScreen() {
+export default function ParkingScreen() {
+  const [parkingData, setParkingData] = useState<parking[]>([]);
+  const [userLocation, setUserLocation] = useState<{ latitude: number; longitude: number } | null>(null);
+
+  // Traer datos de Supabase
+  useEffect(() => {
+    const fetchParking = async () => {
+      const { data, error } = await supabase.from("gas_stations").select("*");
+
+
+
+      if (error) {
+        console.log("SUPABASE ERROR:", error);
+        Alert.alert("Error Supabase", error.message);
+        return;
+      }
+
+      // Convertimos a tipo parking
+      const formatted = data.map((p: any) => ({
+        id: String(p.Id),
+        name: p.Name,
+        price: typeof p.Price === "string"
+          ? parseFloat(p.Price.replace(",", "."))
+          : p.Price,
+        location: p.Name,
+        description: p.Description,
+        latitude: p.Latitude,
+        longitude: p.Longitude,
+        slots: p.Slots,
+      }));
+
+      setParkingData(formatted);
+    };
+
+    fetchParking();
+  }, []);
+
   const [filter, setFilter] = useState<FilterType>("price");
   const [modalVisible, setModalVisible] = useState(false);
-  const [userLocation, setUserLocation] = useState<{
-    latitude: number;
-    longitude: number;
-  } | null>(null);
 
   /* OBTENER UBICACIÓN REAL */
   useEffect(() => {
@@ -70,18 +89,17 @@ export default function GasStationScreen() {
     getLocation();
   }, []);
 
-  const getDistanceKm = (ad: Ad) => {
+  const getDistanceKm = (p: parking) => {
     if (!userLocation) return Infinity;
 
     const toRad = (value: number) => (value * Math.PI) / 180;
 
     const R = 6371; // radio Tierra km
-    const dLat = toRad(ad.latitude - userLocation.latitude);
-    const dLon = toRad(ad.longitude - userLocation.longitude);
+    const dLat = toRad(p.latitude - userLocation.latitude);
+    const dLon = toRad(p.longitude - userLocation.longitude);
 
     const lat1 = toRad(userLocation.latitude);
-    const lat2 = toRad(ad.latitude);
-
+    const lat2 = toRad(p.latitude);
     const a =
       Math.sin(dLat / 2) ** 2 +
       Math.sin(dLon / 2) ** 2 * Math.cos(lat1) * Math.cos(lat2);
@@ -91,12 +109,12 @@ export default function GasStationScreen() {
     return R * c;
   };
 
-  /* 🔄 ORDENAR */
-  const sortedAds = [...ADS_DATA].sort((a, b) =>
+  const sortedAds = [...parkingData].sort((a, b) =>
     filter === "price"
       ? a.price - b.price
       : getDistanceKm(a) - getDistanceKm(b)
   );
+
 
   /*ABRIR MAPAS */
   const openMaps = (lat: number, lng: number) => {
@@ -108,22 +126,31 @@ export default function GasStationScreen() {
     Linking.openURL(url);
   };
 
-  const renderItem = ({ item }: { item: Ad }) => {
+  const renderItem = ({ item }: { item: parking }) => {
+
     const distance = getDistanceKm(item);
 
     return (
       <View style={styles.card}>
-        <Text style={styles.price}>{item.price.toFixed(2)} €/L</Text>
 
         <Pressable onPress={() => openMaps(item.latitude, item.longitude)}>
           <Text style={styles.location}>{item.location}</Text>
         </Pressable>
 
-        <Text style={styles.description}>{item.description}</Text>
+
+        {/* ESTADO DE PLAZAS */}
+        {item.slots === 0 ? (
+          <Text style={styles.noSlots}>🚫 SIN APARCAMIENTO</Text>
+        ) : (
+          <Text style={styles.slots}>
+            🅿️ PLAZAS DISPONIBLES: {item.slots}
+          </Text>
+        )}
+
 
         {filter === "distance" && userLocation && (
           <Text style={styles.distance}>
-            📍 {distance.toFixed(1)} km away
+            {distance.toFixed(1)} km away
           </Text>
         )}
       </View>
@@ -158,6 +185,7 @@ export default function GasStationScreen() {
           style={styles.modalOverlay}
           onPress={() => setModalVisible(false)}
         >
+
           <View style={styles.modal}>
             <Pressable
               style={styles.modalOption}
@@ -245,6 +273,20 @@ const styles = StyleSheet.create({
     color: "#374151",
     fontWeight: "500",
   },
+  slots: {
+    marginTop: 6,
+    fontSize: 14,
+    fontWeight: "700",
+    color: "#16a34a", // verde
+  },
+
+  noSlots: {
+    marginTop: 6,
+    fontSize: 14,
+    fontWeight: "700",
+    color: "#dc2626", // rojo
+  },
+
 
   modalOverlay: {
     flex: 1,
